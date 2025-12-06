@@ -1,0 +1,50 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDKs
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            10.0.x
+            9.0.x
+          include-prerelease: true
+
+      - name: Restore
+        run: |
+          dotnet restore src/LTWProtocolConverter/LTWProtocolConverter.csproj
+          dotnet restore tests/LittleTreeConverter.Tests/LittleTreeConverter.Tests.csproj
+          dotnet restore tests/LTWProtocolConverter.Tests/LTWProtocolConverter.Tests.csproj
+
+      - name: Build
+        run: dotnet build src/LTWProtocolConverter/LTWProtocolConverter.csproj --configuration Release --no-restore
+
+      - name: Test
+        run: |
+          dotnet test tests/LittleTreeConverter.Tests/LittleTreeConverter.Tests.csproj --configuration Release --verbosity normal
+          dotnet test tests/LTWProtocolConverter.Tests/LTWProtocolConverter.Tests.csproj --configuration Release --verbosity normal
+
+      - name: Publish
+        run: dotnet publish src/LTWProtocolConverter/LTWProtocolConverter.csproj --configuration Release --no-build --output build_artifacts/${{ matrix.os }}/LTWProtocolConverter
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ltwprotocolconverter-${{ matrix.os }}
+          path: build_artifacts/${{ matrix.os }}/LTWProtocolConverter
