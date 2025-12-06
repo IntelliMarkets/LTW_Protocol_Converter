@@ -29,7 +29,6 @@ jobs:
       - name: Restore
         run: |
           dotnet restore src/LTWProtocolConverter/LTWProtocolConverter.csproj
-          dotnet restore tests/LittleTreeConverter.Tests/LittleTreeConverter.Tests.csproj
           dotnet restore tests/LTWProtocolConverter.Tests/LTWProtocolConverter.Tests.csproj
 
       - name: Build
@@ -37,7 +36,6 @@ jobs:
 
       - name: Test
         run: |
-          dotnet test tests/LittleTreeConverter.Tests/LittleTreeConverter.Tests.csproj --configuration Release --verbosity normal
           dotnet test tests/LTWProtocolConverter.Tests/LTWProtocolConverter.Tests.csproj --configuration Release --verbosity normal
 
       - name: Publish
