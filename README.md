@@ -1,6 +1,6 @@
-# LittleTreeConverter
+# LTWProtocolConverter
 
-LittleTreeConverter 是一个基于 .NET 的命令行工具，可在 APICORE JSON 配置与小树壁纸源（Little Tree Wallpaper Next v2.0）TOML 文件之间进行双向转换。
+LTWProtocolConverter 是一个基于 .NET 的命令行工具，可在 APICORE JSON 配置与小树壁纸源（Little Tree Wallpaper Next v2.0）TOML 文件之间进行双向转换。
 
 ## 功能
 
@@ -12,13 +12,13 @@ LittleTreeConverter 是一个基于 .NET 的命令行工具，可在 APICORE JSO
 
 ```powershell
 # 进入仓库根目录
-pwsh -Command "dotnet run --project src/LittleTreeConverter -- --help"
+pwsh -Command "dotnet run --project src/LTWProtocolConverter -- --help"
 ```
 
 ### 合并 APICORE → 壁纸源
 
 ```powershell
-dotnet run --project src/LittleTreeConverter -- merge `
+dotnet run --project src/LTWProtocolConverter -- merge `
   -i apis/bing.json apis/wallhaven.json `
   --identifier littletree_auto `
   --name "示例壁纸源" `
@@ -31,7 +31,7 @@ dotnet run --project src/LittleTreeConverter -- merge `
 ### 拆分 壁纸源 → APICORE
 
 ```powershell
-dotnet run --project src/LittleTreeConverter -- split `
+dotnet run --project src/LTWProtocolConverter -- split `
   -i samples/wallpaper.toml `
   -o build/apicore `
   --prefix wallpaper

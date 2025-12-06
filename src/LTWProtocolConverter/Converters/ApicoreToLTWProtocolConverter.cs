@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
-using LittleTreeConverter.Models;
-using LittleTreeConverter.Utilities;
+using LTWProtocolConverter.Models;
+using LTWProtocolConverter.Utilities;
 
-namespace LittleTreeConverter.Converters;
+namespace LTWProtocolConverter.Converters;
 
-public sealed class ApicoreToLittleTreeConverter
+public sealed class ApicoreToLTWProtocolConverter
 {
     public WallpaperSource Convert(IEnumerable<ApicoreConfig> configs, ApicoreMergeOptions options)
     {

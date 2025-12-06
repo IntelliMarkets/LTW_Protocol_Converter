@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using LittleTreeConverter.Models;
+using LTWProtocolConverter.Models;
 using Tomlyn;
 using Tomlyn.Model;
 
-namespace LittleTreeConverter.Parsers;
+namespace LTWProtocolConverter.Parsers;
 
 public sealed class LittleTreeReader
 {

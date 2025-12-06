@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace LittleTreeConverter.Utilities;
+namespace LTWProtocolConverter.Utilities;
 
 public static partial class TextUtilities
 {

@@ -2,10 +2,10 @@ using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using Json.Schema;
-using LittleTreeConverter.Models;
-using LittleTreeConverter.Resources;
+using LTWProtocolConverter.Models;
+using LTWProtocolConverter.Resources;
 
-namespace LittleTreeConverter.Parsers;
+namespace LTWProtocolConverter.Parsers;
 
 public sealed class ApicoreReader
 {

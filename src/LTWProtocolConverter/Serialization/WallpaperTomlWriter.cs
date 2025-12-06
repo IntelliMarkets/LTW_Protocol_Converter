@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using LittleTreeConverter.Models;
+using LTWProtocolConverter.Models;
 using Tomlyn;
 using Tomlyn.Model;
 
-namespace LittleTreeConverter.Serialization;
+namespace LTWProtocolConverter.Serialization;
 
 public sealed class WallpaperTomlWriter
 {

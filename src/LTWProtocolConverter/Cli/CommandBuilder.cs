@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using LittleTreeConverter.Converters;
-using LittleTreeConverter.Models;
-using LittleTreeConverter.Parsers;
-using LittleTreeConverter.Serialization;
+using LTWProtocolConverter.Converters;
+using LTWProtocolConverter.Models;
+using LTWProtocolConverter.Parsers;
+using LTWProtocolConverter.Serialization;
 
-namespace LittleTreeConverter.Cli;
+namespace LTWProtocolConverter.Cli;
 
 public static class CommandBuilder
 {
@@ -128,7 +128,7 @@ public static class CommandBuilder
         CancellationToken cancellationToken)
     {
         var reader = new ApicoreReader();
-        var converter = new ApicoreToLittleTreeConverter();
+        var converter = new ApicoreToLTWProtocolConverter();
         var writer = new WallpaperTomlWriter();
 
         var configs = inputs.Select(file => reader.Load(file.FullName)).ToList();

@@ -6,9 +6,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleTreeConverter", "src\LittleTreeConverter\LittleTreeConverter.csproj", "{F1A2C6CF-DC7B-0EEB-93B6-CC83CABD9CEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LTWProtocolConverter", "src\LTWProtocolConverter\LTWProtocolConverter.csproj", "{F1A2C6CF-DC7B-0EEB-93B6-CC83CABD9CEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleTreeConverter.Tests", "tests\LittleTreeConverter.Tests\LittleTreeConverter.Tests.csproj", "{2A7E94C7-B1A6-2DA3-132C-9BC76AC444CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LTWProtocolConverter.Tests", "tests\LTWProtocolConverter.Tests\LTWProtocolConverter.Tests.csproj", "{2A7E94C7-B1A6-2DA3-132C-9BC76AC444CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

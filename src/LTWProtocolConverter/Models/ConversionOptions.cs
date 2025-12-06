@@ -1,4 +1,4 @@
-namespace LittleTreeConverter.Models;
+namespace LTWProtocolConverter.Models;
 
 public sealed record ApicoreMergeOptions
 {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace LittleTreeConverter.Models;
+namespace LTWProtocolConverter.Models;
 
 public sealed record WallpaperMetadata(
     string Identifier,

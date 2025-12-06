@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using LittleTreeConverter.Models;
-using LittleTreeConverter.Utilities;
+using LTWProtocolConverter.Models;
+using LTWProtocolConverter.Utilities;
 
-namespace LittleTreeConverter.Converters;
+namespace LTWProtocolConverter.Converters;
 
 public sealed class LittleTreeToApicoreConverter
 {

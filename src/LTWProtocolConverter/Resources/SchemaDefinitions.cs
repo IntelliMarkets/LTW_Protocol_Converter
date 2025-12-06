@@ -1,4 +1,4 @@
-namespace LittleTreeConverter.Resources;
+namespace LTWProtocolConverter.Resources;
 
 internal static class SchemaDefinitions
 {
