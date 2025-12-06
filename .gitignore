@@ -1,0 +1,142 @@
+## 忽略Visual Studio用户特定文件
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## 忽略编译输出
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## 忽略Visual Studio临时文件
+*.cache
+*.ilk
+*.map
+*.pdb
+*.tmp
+
+## 忽略NuGet包目录
+packages/
+## 除非在解决方案根目录中使用packages文件夹
+# !packages/
+
+## 忽略NuGet配置文件
+*.nupkg
+nuget.exe
+NuGet.Config
+NuGet.targets
+
+## 忽略项目引用
+project.lock.json
+
+## 忽略临时文件
+*.tmp
+*.temp
+
+## 忽略Visual Studio预发布文件
+*.[Pp]ublish.xml
+
+## 忽略代码分析文件
+*.lastcodeanalysissucceeded
+
+## 忽略Visual Studio设置文件
+*.settings
+
+## 忽略Visual Studio缓存目录
+.vs/
+
+## 忽略ReSharper缓存目录
+_ReSharper.*/
+*.ReSharper
+*.DotSettings.user
+
+## 忽略Visual Studio Code目录
+.vscode/
+
+## 忽略Rider目录
+.idea/
+*.sln.iml
+
+## 忽略用户特定文件
+*.userprefs
+
+## 忽略Mac OS文件
+.DS_Store
+
+## 忽略Docker相关文件
+.dockerignore
+docker-compose.*.yml
+
+## 忽略测试结果
+TestResults/
+*.trx
+
+## 忽略OpenCover代码覆盖率报告
+coverage*.xml
+*.coverage
+*.coveragexml
+
+## 忽略NCrunch相关文件
+_NCrunch_*
+.*crunch*.local.xml
+
+## 忽略SQL Server文件
+*.mdf
+*.ldf
+
+## 忽略Windows图像缓存
+Thumbs.db
+
+## 忽略MySql文件
+*.mysql
+*.mysqldump
+
+## 忽略备份文件
+*.bak
+*.backup
+
+## 忽略日志文件
+*.log
+
+## 忽略ROSlyn临时文件
+*.roslyn.json
+
+## 忽略.NET Core项目运行时的本地设置
+launchSettings.json
+
+## 忽略项目引用文件（如果使用本地引用）
+**/Properties/launchSettings.json
+
+## 忽略ASP.NET Core生成的静态文件
+**/wwwroot/lib/
+
+## 忽略中间件（如TypeScript编译输出）
+**/wwwroot/dist/
+
+## 忽略客户端构建输出
+wwwroot/dist/
+
+## 忽略Node.js的node_modules目录
+node_modules/
+
+## 忽略Bower组件
+bower_components/
+
+## 忽略TypeScript构建输出
+*.js.map
+*.js
+
+## 忽略参考资料
+参考资料/
