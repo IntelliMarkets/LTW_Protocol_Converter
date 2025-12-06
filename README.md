@@ -37,21 +37,9 @@ dotnet run --project src/LTWProtocolConverter -- split `
   --prefix wallpaper
 ```
 
-## 约定（选项 B）
+## 约定
 
 - 合并时按照 APICORE `friendly_name` 生成分类与 API 名称，统一一级分类/二级分类可通过 `--category` 与 `--subcategory` 设定。
 - APICORE 参数类型自动映射到壁纸源参数：`boolean`→`boolean`，`enum/list`→`choice`，其他类型→`text`。
 - 拆分时，如果 API 使用参数预设则取 `param_preset_id`（若缺失则取 `category_param_mapping` 中的首个预设）。
 - `static_list`、`static_dict` 会被展开为多份 APICORE JSON，`link` 直接指向图片地址，`parameters` 留空。
-
-## 测试
-
-后续可在 `tests/` 目录中补充单元测试：
-
-```powershell
-dotnet test
-```
-
----
-
-如需了解协议细节，请参考 `参考资料/` 文件夹中的现有文档。
