@@ -2,6 +2,9 @@
 
 LTWProtocolConverter 是一个基于 .NET 的命令行工具，可在 APICORE JSON 配置与小树壁纸源（Little Tree Wallpaper Next v2.0）TOML 文件之间进行双向转换。
 
+> [!TIP]
+> 您可以在 https://github.com/IntelliMarkets/LTW_Protocol_Converter/actions 获取最新的开发构建
+
 ## 功能
 
 - **merge**：将多个 APICORE JSON 按照约定合并为一个壁纸源（内置 APICORE Schema，无需额外文件）。
